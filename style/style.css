@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #101119;
+  color: #e0e3ee;
+}
+header {
+  max-width: 80%;
+  margin: auto;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  letter-spacing: 2.5px;
+}
+
+header nav .logo a {
+  text-decoration: none;
+  color: #e0e3ee;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+header nav .logo a span {
+  color: #f4795b;
+}
+header nav .menu a {
+  text-decoration: none;
+  color: #e0e3ee;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+header nav .menu a span {
+  color: #f4795b;
+}
+/* styling the main */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  flex-direction: column;
+}
+main h1 {
+  text-align: center;
+  font-size: 3.8rem;
+  line-height: 6.4rem;
+  letter-spacing: 4px;
+  font-weight: 800;
+  max-width: 80%;
+  margin-bottom: 1em;
+}
+main svg {
+  width: 80px;
+  fill: white;
+}
+
+main a {
+  background-color: #f4795b;
+  text-decoration: none;
+  color: #e0e3ee;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 2px;
+  margin-top: 1em;
+  transition: 0.3s linear;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+main a:hover {
+  transform: scale(0.8);
+}
+
+/* styling the section */
+section {
+  height: auto;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  background-color: #e0e3ed;
+}
+section h2 {
+  text-align: center;
+  color: #101118;
+  font-size: 3.2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 1em;
+}
+/* styling CARDS */
+
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.card {
+  background-color: #101118;
+  color: white;
+
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em;
+}
+.card p {
+  font-size: 2.4rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.card a {
+  background-color: #f57861;
+  text-decoration: none;
+  color: #e0e3ee;
+  border: none;
+  text-align: center;
+  width: 100%;
+  border-radius: 2px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  transition: 0.3s linear;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.card img {
+  width: 100px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  filter: invert();
+}

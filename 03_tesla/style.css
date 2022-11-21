@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  color: #151515;
+  font-size: 2.4rem;
+  font-weight: bold;
+  width: 865px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.h1-red {
+  color: #ff1337;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main p {
+  width: 865px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  line-height: 27px;
+  border-bottom: solid 1px black;
+}
+main ul {
+  width: 865px;
+  border-bottom: solid 1px black;
+  margin-left: 40px;
+}
+main ul li {
+  list-style-image: url(/03_tesla/images/bg_listitem.jpg);
+  padding-inline-start: 1ch;
+  padding-bottom: 15px;
+}
+main ul li img {
+  margin-right: 15px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+footer .footer-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

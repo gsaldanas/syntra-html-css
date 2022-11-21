@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Select the big apples</h1>
+      <div class="table">
+        <div class="plate1">
+          <div class="apple-small"></div>
+        </div>
+        <div class="plate1">
+          <div id="apple" class="apple-big gelatine"></div>
+        </div>
+        <div class="plate1 noplate">
+          <div id="apple" class="apple-big gelatine"></div>
+        </div>
+        <div class="plate1">
+          <div class="apple-small orange"></div>
+        </div>
+        <div class="plate1 noplate">
+          <div class="apple-small orange pickle"></div>
+        </div>
+      </div>
+    </main>
+    <script>
+      const apples = document.querySelector("#apple");
+      apples.addEventListener("click", myClick);
+      function myClick() {
+        console.log("geklikt!");
+      }
+    </script>
+  </body>
+</html>

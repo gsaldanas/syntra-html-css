@@ -1,0 +1,88 @@
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #2e2a24;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+h1 {
+  color: rgb(244, 240, 240);
+}
+.table {
+  background-color: #db9743;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 250px;
+  border-radius: 30px;
+  box-shadow: #2e2a24 0px 3px 4px;
+}
+.plate1 {
+  background-color: white;
+  padding: 2em;
+  border-radius: 100%;
+  box-shadow: #2e2a24 0px 3px 4px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plate1 .apple-small {
+  background-color: #e51224;
+  padding: 0.8em;
+  border-radius: 100%;
+  box-shadow: #2e2a24 0px 3px 4px;
+}
+.plate1 .apple-big {
+  background-color: #e51224;
+  padding: 1.5em;
+  border-radius: 100%;
+  box-shadow: #2e2a24 0px 3px 4px;
+}
+.plate1 .apple-big:hover {
+  cursor: pointer;
+}
+.plate1.noplate {
+  background-color: #db9652;
+  box-shadow: none;
+}
+.plate1 .apple-small.orange {
+  background-color: #ffa43a;
+}
+/* pickle maken */
+
+.plate1 .apple-small.pickle {
+  background-color: #109846;
+  height: 40px;
+  width: 10px;
+}
+/* CSS ANIMATIES */
+.gelatine {
+  animation: gelatine 1s infinite;
+}
+@keyframes gelatine {
+  from,
+  to {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
