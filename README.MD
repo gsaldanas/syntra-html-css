@@ -10,7 +10,7 @@ inside the "scripts" block you can define name of the script to run & as propert
 
 ```json
 "scripts": {
-    "surge": "surge C:\\Users\\kdehbi\\Documents\\syntra_html\\ karim-html-css-syntra_2023.surge.sh"
+    "surge": "your path"
   }
 ```
 
