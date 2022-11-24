@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* main */
+
+header {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+nav > .logo p {
+  color: #ff9b5e;
+  font-size: 2rem;
+  font-weight: 100;
+}
+nav > .logo p::first-letter {
+  color: white;
+  font-weight: 800;
+}
+nav .menu img {
+  filter: invert();
+}
+/* hide links on mobile */
+nav ul {
+  display: none;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+/* main */
+main {
+  background-image: url(images/xit-bg.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem 1rem;
+}
+main .main-info {
+  margin-bottom: 4rem;
+}
+main .main-info > .logo p {
+  color: #ff9b5e;
+  font-size: 3rem;
+  font-weight: 100;
+}
+main .main-info > .logo p::first-letter {
+  color: white;
+  font-weight: 800;
+}
+main .main-info h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+main .main-info h1::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  border-radius: 3px;
+  margin-top: 20px;
+  margin-bottom: 24px;
+  background-color: white;
+}
+main .main-info > p {
+  color: white;
+  font-weight: 100;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  margin-bottom: 3rem;
+}
+.download-btn {
+  text-decoration: none;
+  color: white;
+  border: solid 2px white;
+  padding: 1rem 2rem;
+  transition: all 0.3s ease;
+  border-radius: 3px;
+}
+.download-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+main form fieldset {
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main form fieldset legend {
+  color: white;
+  background-color: gainsboro;
+  color: black;
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+form input[type="text"] {
+  width: 80%;
+  padding: 1rem;
+  border: none;
+  border-bottom: solid 1px gainsboro;
+}
+.btn-submit {
+  margin-top: 2rem;
+  width: 100%;
+  background-color: #ff9b5e;
+  padding: 1rem;
+  border: 0;
+  color: white;
+}
+/* media queries */
+@media (min-width: 768px) {
+  nav .menu {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    gap: 50px;
+  }
+}
