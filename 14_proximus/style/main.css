@@ -10,6 +10,9 @@ html {
 *:after {
   box-sizing: inherit;
 }
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 /* header */
 /* nav */
@@ -25,4 +28,75 @@ nav {
 nav figure img {
   filter: invert();
   width: 30px;
+}
+/* main */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/images/hp-banner-jo-black-friday-bg-2211-s_2022-11-10-15-43-14_cache.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 20%;
+
+  padding: 1.5rem;
+  gap: 20px;
+  padding-bottom: 6rem;
+}
+/* info section */
+main section.main-info {
+  color: white;
+}
+main section.main-info h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+main section.main-info h2 {
+  font-size: 1.8rem;
+  font-weight: 200;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+}
+main section.main-info .counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+main section.main-info .counter div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main section.main-info .counter span {
+  font-size: 2.4rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+main section.main-info .counter p {
+  color: #bbb7c1;
+}
+main section.main-info .btn-deals {
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  background: rgb(91, 74, 109);
+  background: radial-gradient(
+    circle,
+    rgba(91, 74, 109, 1) 0%,
+    rgba(165, 157, 175, 1) 100%
+  );
+  width: 100%;
+  padding: 1.2rem 2rem;
+  border-radius: 4px;
+  border-bottom-right-radius: 15px;
+}
+/* phone image */
+main section.phone-images img {
+  max-width: 100%;
+  width: 200px;
 }
