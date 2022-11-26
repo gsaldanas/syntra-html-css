@@ -12,6 +12,7 @@ html {
 }
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f1f1f1;
 }
 
 /* header */
@@ -41,7 +42,7 @@ main {
 
   padding: 1.5rem;
   gap: 20px;
-  padding-bottom: 6rem;
+  padding-bottom: 8rem;
 }
 /* info section */
 main section.main-info {
@@ -82,7 +83,7 @@ main section.main-info .counter p {
 main section.main-info .btn-deals {
   color: white;
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 700;
   background: rgb(91, 74, 109);
   background: radial-gradient(
@@ -99,4 +100,43 @@ main section.main-info .btn-deals {
 main section.phone-images img {
   max-width: 100%;
   width: 200px;
+}
+/* personalized content section */
+.personalized-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem;
+}
+.personalized-content > .login-box {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  box-shadow: 0rem 0rem 2rem -1rem rgb(0 0 0 / 50%);
+  position: absolute;
+  top: -50px;
+  min-height: 120px;
+  z-index: 10;
+  width: 100%;
+}
+.personalized-content > .login-box p {
+  color: #512485;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.personalized-content > .login-box a {
+  background-color: #512485;
+  padding: 1.5rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  border-bottom-right-radius: 15px;
 }
